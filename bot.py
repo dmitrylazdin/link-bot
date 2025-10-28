@@ -11,7 +11,7 @@ def link_keyboard():
     return InlineKeyboardMarkup([[InlineKeyboardButton(LINK_BUTTON_TEXT, url=CHANNEL_URL)]])
 
 async def send_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    text = ("Вот ссылка на канал 👇\n\n"
+    text = ("Подробная информация о  вакансии копирайтера сценариев описана по ссылке 👇\n\n"
             "Если кнопка не открылась, используйте прямую ссылку:\n"
             f"{CHANNEL_URL}")
     await update.effective_chat.send_message(
